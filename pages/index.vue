@@ -11,14 +11,27 @@
     >
       <div class="content-wrapper">
         <!-- Displays if myData is not set. -->
-        <facebook-loader v-if="!myData"
-          :height="475"
+        <content-loader
+          v-if="!myData"
+          :height="500"
           :width="400"
           :speed="2"
           primaryColor="#f3f3f3"
           secondaryColor="#ecebeb"
         >
-      </facebook-loader>
+          <rect x="217" y="22" rx="3" ry="3" width="117" height="6" /> 
+          <rect x="223" y="42" rx="3" ry="3" width="85" height="6" /> 
+          <rect x="220.61" y="84.67" rx="3" ry="3" width="136.5" height="3.5" /> 
+          <rect x="220.94" y="103.67" rx="3" ry="3" width="148.8" height="4.3" /> 
+          <rect x="221.55" y="128.67" rx="3" ry="3" width="162.8" height="4.3" /> 
+          <circle cx="40.3" cy="49.3" r="21.3" /> 
+          <circle cx="41.33" cy="107.97" r="21.15" /> 
+          <circle cx="50.18" cy="48.67" r="1" /> 
+          <rect x="77.18" y="23.67" rx="0" ry="0" width="118.8" height="109.2" /> 
+          <rect x="23.4" y="165.45" rx="0" ry="0" width="368.16" height="6.2" /> 
+          <rect x="23.4" y="185.4" rx="0" ry="0" width="368.16" height="6.2" /> 
+          <rect x="105.18" y="183.67" rx="0" ry="0" width="0" height="0" />
+        </content-loader>
         <div v-else class="my-real-content">
           <div class="text-center">
             <logo />
@@ -76,7 +89,7 @@
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import country from 'country-data'
-import { FacebookLoader } from 'vue-content-loader'
+import { ContentLoader } from 'vue-content-loader'
 import VImageInput from 'vuetify-image-input'
 
 export default {
@@ -117,13 +130,13 @@ export default {
     [VImageInput.name]: VImageInput,
     Logo,
     VuetifyLogo,
-    FacebookLoader
+    ContentLoader
   },
   mounted() {
     // Just pretend this is an AJAX call. Use your imagination.
     setTimeout(() => {
-      this.myData = 'Example Data';
-    }, 3000);
+      // this.myData = 'Example Data';
+    }, 15000);
   },
   methods: {
     toggleShow() {
