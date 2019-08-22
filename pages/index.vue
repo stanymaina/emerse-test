@@ -13,7 +13,7 @@
         <!-- Displays if myData is not set. -->
         <content-loader
           v-if="!myData"
-          :height="500"
+          :height="310"
           :width="400"
           :speed="2"
           primaryColor="#f3f3f3"
@@ -28,8 +28,11 @@
           <circle cx="41.33" cy="107.97" r="21.15" /> 
           <circle cx="50.18" cy="48.67" r="1" /> 
           <rect x="77.18" y="23.67" rx="0" ry="0" width="118.8" height="109.2" /> 
-          <rect x="23.4" y="165.45" rx="0" ry="0" width="368.16" height="6.2" /> 
-          <rect x="23.4" y="185.4" rx="0" ry="0" width="368.16" height="6.2" /> 
+          <rect x="23.4" y="165.45" rx="0" ry="0" width="368.16" height="5.5" /> 
+          <rect x="23.4" y="185.4" rx="0" ry="0" width="368.16" height="5.5" /> 
+          <rect x="23.4" y="205.4" rx="0" ry="0" width="368.16" height="5.5" /> 
+          <rect x="23.4" y="225.4" rx="0" ry="0" width="368.16" height="5.5" /> 
+          <rect x="23.4" y="245.4" rx="0" ry="0" width="368.16" height="5.5" /> 
           <rect x="105.18" y="183.67" rx="0" ry="0" width="0" height="0" />
         </content-loader>
         <div v-else class="my-real-content">
