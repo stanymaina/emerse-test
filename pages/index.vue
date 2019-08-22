@@ -11,6 +11,32 @@
     >
       <div class="content-wrapper">
         <!-- Displays if myData is not set. -->
+        <v-icon v-if="!myData"></v-icon>
+    
+        <div v-else class="my-real-content">
+          <div class="text-center">
+            <logo />
+            <vuetify-logo />
+          </div>
+          <div class="text-xs-center" style="width:90%;margin-top:20px;">
+            <div style="text-align:left;margin-bottom:10px;">Product description</div>
+            <vue-editor v-model="description" :editorToolbar="customToolbar"></vue-editor>
+            <v-image-input
+              v-model="imageData"
+              :image-quality="0.85"
+              clearable
+              uploadIcon="mdi-cloud-upload-outline"
+              rotateClockwiseIcon="mdi-rotate-right"
+              rotateCounterclockwiseIcon="mdi-rotate-left"
+              flipHorizontallyIcon="mdi-flip-horizontal"
+              flipVerticallyIcon="mdi-flip-vertical"
+            />
+          </div>
+        </div>
+      </div>
+      <v-card-title class="headline">
+        E-merse Test Platform for Plugins
+      </v-card-title>
         <content-loader
           v-if="!myData"
           :height="260"
@@ -55,10 +81,6 @@
             />
           </div>
         </div>
-      </div>
-      <v-card-title class="headline">
-        E-merse Test Platform for Plugins
-      </v-card-title>
       <v-card-text>
         <v-row align="center"> 
           <v-col class="d-flex" cols="12" sm="6">
