@@ -121,16 +121,16 @@ export default {
   data() {
     return {
       items: [
-        { abbr: 'USD', name: '$ - United States Dollar' },
+        { abbr: 'USD', name: '$  - United States Dollar' },
         { abbr: 'KES', name: 'Ksh - Kenyan shilling' },
-        { abbr: 'EUR', name: '€ - Euro' },
-        { abbr: 'GBP', name: '£ - Pound sterling' },
+        { abbr: 'EUR', name: '€  - Euro' },
+        { abbr: 'GBP', name: '£  - Pound sterling' },
         { abbr: 'CHF', name: 'Fr - Swiss franc' },
         { abbr: 'CAD', name: 'C$ - Canada Dollar' },
-        { abbr: 'JPY', name: '¥ - Japanese yen' },
+        { abbr: 'JPY', name: '¥  - Japanese yen' },
         { abbr: 'AUD', name: 'A$ - Australian dollar' },
-        { abbr: 'INR', name: '₹ - Indian rupee' },
-        { abbr: 'NGN', name: '₦ - Nigerian naira' }
+        { abbr: 'INR', name: '₹  - Indian rupee' },
+        { abbr: 'NGN', name: '₦  - Nigerian naira' }
       ],
       customToolbar: [
         ["bold", "italic", "underline"],
