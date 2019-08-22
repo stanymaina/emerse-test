@@ -14,7 +14,7 @@
           :height="260"
           :width="400"
           :speed="2"
-          primaryColor="#f3f3f3"
+          primaryColor="#bdbdbd"
           secondaryColor="#ecebeb"
         >
           <rect x="217" y="22" rx="3" ry="3" width="117" height="6" /> 
