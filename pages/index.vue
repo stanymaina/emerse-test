@@ -13,7 +13,7 @@
         <!-- Displays if myData is not set. -->
         <content-loader
           v-if="!myData"
-          :height="310"
+          :height="260"
           :width="400"
           :speed="2"
           primaryColor="#f3f3f3"
