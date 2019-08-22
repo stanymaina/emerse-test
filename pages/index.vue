@@ -38,7 +38,7 @@
         E-merse Test Platform for Plugins
       </v-card-title>
         <content-loader
-          v-if="!myData"
+          v-if="!myData1"
           :height="260"
           :width="400"
           :speed="2"
@@ -148,7 +148,8 @@ export default {
 				smail: '*_~'
 			},
       imgDataUrl: '', // the datebase64 url of created image
-      myData: null
+      myData: null,
+      myData1: null
     }
   },
   components: {
@@ -160,8 +161,8 @@ export default {
   mounted() {
     // Just pretend this is an AJAX call. Use your imagination.
     setTimeout(() => {
-      // this.myData = 'Example Data';
-    }, 15000);
+      this.myData = 'Example Data';
+    }, 1000);
   },
   methods: {
     toggleShow() {
