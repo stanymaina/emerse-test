@@ -4,34 +4,53 @@
     justify-center
     align-center
   >
+    <content-loader
+      mdAndUp
+      v-if="!myData1"
+      :height="520"
+      :width="1200"
+      :speed="2"
+      primaryColor="#bdbdbd"
+      secondaryColor="#ecebeb"
+    >    
+      <rect x="658" y="53" rx="4" ry="4" width="324" height="13" /> 
+      <rect x="666" y="221" rx="4" ry="4" width="162" height="13" /> 
+      <rect x="200" y="34" rx="5" ry="5" width="412" height="400" /> 
+      <rect x="666" y="375" rx="4" ry="4" width="324" height="46" /> 
+      <rect x="666" y="303" rx="4" ry="4" width="324" height="46" /> 
+      <rect x="671" y="260" rx="4" ry="4" width="162" height="8" /> 
+      <rect x="662" y="90" rx="4" ry="4" width="78" height="13" /> 
+      <rect x="666" y="134" rx="4" ry="4" width="324" height="4" /> 
+      <rect x="666" y="149" rx="4" ry="4" width="324" height="4" /> 
+      <rect x="666" y="164" rx="4" ry="4" width="324" height="4" /> 
+      <rect x="666" y="179" rx="4" ry="4" width="324" height="4" /> 
+      <rect x="55" y="62" rx="0" ry="0" width="114" height="115" />
+    </content-loader>
+    <div v-else class="my-real-content">
+    </div>
     <v-flex
       xs12
       sm8
       md6
     >
         <content-loader
+          smAndDown
           v-if="!myData1"
-          :height="260"
+          :height="520"
           :width="400"
           :speed="2"
           primaryColor="#bdbdbd"
           secondaryColor="#ecebeb"
         >
-          <rect x="217" y="22" rx="3" ry="3" width="117" height="6" /> 
-          <rect x="223" y="42" rx="3" ry="3" width="85" height="6" /> 
-          <rect x="220.61" y="84.67" rx="3" ry="3" width="136.5" height="3.5" /> 
-          <rect x="220.94" y="103.67" rx="3" ry="3" width="148.8" height="4.3" /> 
-          <rect x="221.55" y="128.67" rx="3" ry="3" width="162.8" height="4.3" /> 
-          <circle cx="40.3" cy="49.3" r="21.3" /> 
-          <circle cx="41.33" cy="107.97" r="21.15" /> 
-          <circle cx="50.18" cy="48.67" r="1" /> 
-          <rect x="77.18" y="23.67" rx="0" ry="0" width="118.8" height="109.2" /> 
-          <rect x="23.4" y="165.45" rx="0" ry="0" width="368.16" height="5.5" /> 
-          <rect x="23.4" y="185.4" rx="0" ry="0" width="368.16" height="5.5" /> 
-          <rect x="23.4" y="205.4" rx="0" ry="0" width="368.16" height="5.5" /> 
-          <rect x="23.4" y="225.4" rx="0" ry="0" width="368.16" height="5.5" /> 
-          <rect x="23.4" y="245.4" rx="0" ry="0" width="368.16" height="5.5" /> 
-          <rect x="105.18" y="183.67" rx="0" ry="0" width="0" height="0" />
+          <rect x="50" y="270" rx="4" ry="4" width="227" height="10" /> 
+          <rect x="56" y="367" rx="4" ry="4" width="115" height="9" /> 
+          <rect x="50" y="20" rx="5" ry="5" width="239" height="232" /> 
+          <rect x="53" y="447" rx="4" ry="4" width="230" height="33" /> 
+          <rect x="53" y="396" rx="4" ry="4" width="230" height="33" /> 
+          <rect x="90" y="290" rx="4" ry="4" width="55" height="10" /> 
+          <rect x="56" y="325" rx="4" ry="4" width="227" height="3" /> 
+          <rect x="56" y="337" rx="4" ry="4" width="227" height="3" /> 
+          <rect x="56" y="349" rx="4" ry="4" width="227" height="3" />
         </content-loader>
         <div v-else class="my-real-content">
           <div class="text-center">
